@@ -4,3 +4,5 @@ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --pas
 
 sqoop import --connect jdbc:mysql://localhost/loudacre --username training --password training --split-by 'first_name' --fields-terminated-by '\t' --target-dir /loudacre/accounts/CA --as-avrodatafile --compression-codec org.apache.hadoop.io.compress.SnappyCodec --table accounts --where "state = 'CA'"
 
+This is a test
+
